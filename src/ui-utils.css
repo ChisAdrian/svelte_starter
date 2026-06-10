@@ -1,0 +1,466 @@
+/* =========================================
+   RESET
+========================================= */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    overflow: hidden;
+    background: white;
+    color: #111;
+}
+
+/* =========================================
+   GLOBAL SCALE
+========================================= */
+:root {
+    --u: 4px;
+    --fu: 4px;
+    /* font unit */
+}
+
+/* =========================================
+   FLEX
+========================================= */
+
+.f {
+    display: flex;
+}
+
+.fr {
+    display: flex;
+    flex-direction: row;
+}
+
+.fc {
+    display: flex;
+    flex-direction: column;
+}
+
+.f1 {
+    flex: 1;
+}
+
+.fs0 {
+    flex-shrink: 0;
+}
+
+/* Expanded Flex Utilities */
+.fl-w {
+    flex-wrap: wrap;
+}
+
+.fl-nw {
+    flex-wrap: nowrap;
+}
+
+.fl-g1 {
+    flex-grow: 1;
+}
+
+.fl-g0 {
+    flex-grow: 0;
+}
+
+.fl-as {
+    align-self: start;
+}
+
+.fl-ac {
+    align-self: center;
+}
+
+.fl-ae {
+    align-self: flex-end;
+}
+
+.fl-asb {
+    align-self: stretch;
+}
+
+/* =========================================
+   ALIGN
+========================================= */
+
+.ac {
+    align-items: center;
+}
+
+.as {
+    align-items: flex-start;
+}
+
+.ae {
+    align-items: flex-end;
+}
+
+.ast {
+    align-items: stretch;
+}
+
+/* =========================================
+   JUSTIFY
+========================================= */
+
+.jc {
+    justify-content: center;
+}
+
+.js {
+    justify-content: flex-start;
+}
+
+.je {
+    justify-content: flex-end;
+}
+
+.jsb {
+    justify-content: space-between;
+}
+
+.jsa {
+    justify-content: space-around;
+}
+
+.jse {
+    justify-content: space-evenly;
+}
+
+/* =========================================
+   GAP
+========================================= */
+
+.g0 {
+    gap: 0;
+}
+
+.g1 {
+    gap: calc(var(--u) * 1);
+}
+
+.g2 {
+    gap: calc(var(--u) * 2);
+}
+
+.g3 {
+    gap: calc(var(--u) * 3);
+}
+
+.g4 {
+    gap: calc(var(--u) * 4);
+}
+
+.g5 {
+    gap: calc(var(--u) * 5);
+}
+
+.g6 {
+    gap: calc(var(--u) * 6);
+}
+
+/* =========================================
+   PADDING
+========================================= */
+
+.p0 {
+    padding: 0;
+}
+
+.p1 {
+    padding: calc(var(--u) * 1);
+}
+
+.p2 {
+    padding: calc(var(--u) * 2);
+}
+
+.p3 {
+    padding: calc(var(--u) * 3);
+}
+
+.p4 {
+    padding: calc(var(--u) * 4);
+}
+
+.p5 {
+    padding: calc(var(--u) * 5);
+}
+
+.p6 {
+    padding: calc(var(--u) * 6);
+}
+
+/* =========================================
+   MARGIN
+========================================= */
+
+.m0 {
+    margin: 0;
+}
+
+.m1 {
+    margin: calc(var(--u) * 1);
+}
+
+.m2 {
+    margin: calc(var(--u) * 2);
+}
+
+.m3 {
+    margin: calc(var(--u) * 3);
+}
+
+.m4 {
+    margin: calc(var(--u) * 4);
+}
+
+.m5 {
+    margin: calc(var(--u) * 5);
+}
+
+.m6 {
+    margin: calc(var(--u) * 6);
+}
+
+/* =========================================
+   BORDER
+========================================= */
+
+.b0 {
+    border: none;
+}
+
+.b1 {
+    border: 1px solid #ddd;
+}
+
+.b2 {
+    border: 2px solid #ccc;
+}
+
+.b3 {
+    border: 3px solid #bbb;
+}
+
+/* =========================================
+   RADIUS
+========================================= */
+
+.r0 {
+    border-radius: 0;
+}
+
+.r1 {
+    border-radius: calc(var(--u) * 1);
+}
+
+.r2 {
+    border-radius: calc(var(--u) * 2);
+}
+
+.r3 {
+    border-radius: calc(var(--u) * 3);
+}
+
+.r4 {
+    border-radius: calc(var(--u) * 4);
+}
+
+/* =========================================
+   FONT SIZE
+========================================= */
+
+.fs1 {
+    font-size: calc(var(--fu) * 2.5);
+}
+
+.fs2 {
+    font-size: calc(var(--fu) * 3);
+}
+
+.fs3 {
+    font-size: calc(var(--fu) * 4);
+}
+
+.fs4 {
+    font-size: calc(var(--fu) * 5);
+}
+
+.fs5 {
+    font-size: calc(var(--fu) * 6);
+}
+
+/* =========================================
+   FONT WEIGHT
+========================================= */
+
+.fw1 {
+    font-weight: 300;
+}
+
+.fw2 {
+    font-weight: 400;
+}
+
+.fw3 {
+    font-weight: 600;
+}
+
+.fw4 {
+    font-weight: 700;
+}
+
+/* =========================================
+   WIDTH / HEIGHT
+========================================= */
+
+.wf {
+    width: 100%;
+}
+
+.hf {
+    height: 100%;
+}
+
+.w-auto {
+    width: auto;
+}
+
+.h-auto {
+    height: auto;
+}
+
+.ws {
+    width: 100vw;
+}
+
+.hs {
+    height: 100vh;
+}
+
+.mwf {
+    max-width: 100%;
+}
+
+.mhf {
+    max-height: 100%;
+}
+
+/* =========================================
+   OVERFLOW
+========================================= */
+
+.oa {
+    overflow: auto;
+}
+
+.oh {
+    overflow: hidden;
+}
+
+/* =========================================
+   TEXT
+========================================= */
+
+.tc {
+    text-align: center;
+}
+
+.tl {
+    text-align: left;
+}
+
+.tr {
+    text-align: right;
+}
+
+/* =========================================
+   POSITION
+========================================= */
+
+.rel {
+    position: relative;
+}
+
+.abs {
+    position: absolute;
+}
+
+.fix {
+    position: fixed;
+}
+
+.sticky {
+    position: sticky;
+}
+
+/* =========================================
+   CURSOR
+========================================= */
+
+.cp {
+    cursor: pointer;
+}
+
+/* =========================================
+   TRANSITIONS
+========================================= */
+
+.t {
+    transition: all 0.2s ease;
+}
+
+.ts {
+    transition: all 0.6s ease;
+}
+
+/* =========================================
+   DISPLAY
+========================================= */
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.none {
+    display: none;
+}
+
+
+.elevate {
+    --elevate1: 0 0.125rem 0.125rem 0 rgb(0 0 0 / 0.32);
+    box-shadow: var(--elevate1) !important;
+}
+
+/* =========================================
+   RESPONSIVE SCALE
+========================================= */
+
+@media (max-width: 768px) {
+    :root {
+        --u: 3px;
+        --fu: 4.5px;
+        /* Sightly reduced font scaling for mobile readability */
+    }
+}

@@ -1,0 +1,54 @@
+:root {
+  /* Primary */
+  --valeo-white: #ffffff;
+  --valeo-dark: #253442;
+  --valeo-green: #82e600;
+  
+  /* Secondary - Energy */
+  --valeo-blue: #1e5a7c;
+  --valeo-vibrant-blue: #2d85b9;
+  
+  /* Secondary - Neutral */
+  --valeo-light-grey: #e4eaee;
+  --valeo-mid-grey: #93adbc;
+  --valeo-winglet: #4e6b7c;
+  
+  /* Sentiment - Base */
+  --sentiment-negative: #c74343;
+  --sentiment-warning: #edc843;
+  --sentiment-positive: #2f7d4c;
+  
+  /* Sentiment - Vibrant */
+  --sentiment-negative-vibrant: #fc8585;
+  --sentiment-warning-vibrant: #ffe88c;
+  --sentiment-positive-vibrant: #6fda86;
+}
+
+/* Primary */
+.css-valeo-white { background: var(--valeo-white); color: var(--valeo-dark) !important; }
+.css-valeo-dark { background: var(--valeo-dark); color: var(--valeo-white) !important; }
+.css-valeo-green { background: var(--valeo-green); color: var(--valeo-dark) !important; }
+
+/* Secondary - Energy */
+.css-valeo-blue { background: var(--valeo-blue); color: var(--valeo-white) !important; }
+.css-valeo-vibrant-blue { background: var(--valeo-vibrant-blue); color: var(--valeo-white) !important; }
+
+/* Secondary - Neutral */
+.css-valeo-light-grey { background: var(--valeo-light-grey); color: var(--valeo-dark) !important; }
+.css-valeo-mid-grey { background: var(--valeo-mid-grey); color: var(--valeo-dark) !important; }
+.css-valeo-winglet { background: var(--valeo-winglet); color: var(--valeo-white) !important; }
+
+/* Sentiment - Base */
+.css-sentiment-negative-base { background: var(--sentiment-negative); color: var(--valeo-white) !important; }
+.css-sentiment-warning-base { background: var(--sentiment-warning); color: var(--valeo-dark) !important; }
+.css-sentiment-positive-base { background: var(--sentiment-positive); color: var(--valeo-white) !important; }
+
+/* Sentiment - Vibrant */
+.css-sentiment-negative-vibrant { background: var(--sentiment-negative-vibrant); color: var(--valeo-dark) !important; }
+.css-sentiment-warning-vibrant { background: var(--sentiment-warning-vibrant); color: var(--valeo-dark) !important; }
+.css-sentiment-positive-vibrant { background: var(--sentiment-positive-vibrant); color: var(--valeo-dark) !important; }
+
+/* Text utilities */
+.text-valeo-green { color: var(--valeo-green) !important; }
+.text-valeo-dark { color: var(--valeo-dark) !important; }
+.text-valeo-white { color: var(--valeo-white) !important; }
