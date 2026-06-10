@@ -42,13 +42,16 @@
           out:fade={{ delay: 0, duration: 500 }}
         >
           <div
-            class="sticky f jsb b2 p2 css-valeo-light-grey m0"
+            class="sticky f jsb b2 p2 css-valeo-winglet m0 ac"
             style="top: 0;"
           >
-            Side bar content here <button
-              onclick={() => showHideSideBar()}
-              class="b2">BTN</button
-            >
+            <!-- svelte-ignore a11y_consider_explicit_label -->
+            Side bar content here
+            <button onclick={() => showHideSideBar()} class="b2">
+              <div class="menuiconitem"></div>
+              <div class="menuiconitem"></div>
+              <div class="menuiconitem"></div>
+            </button>
           </div>
 
           {#each menus as menu}
@@ -60,9 +63,14 @@
         </aside>
       {/if}
 
-      <div class="f1 b1 css-valeo-light-grey hf oa">
-        <div class="sticky f jsb b2 p2 css-valeo-light-grey m0" style="top: 0;">
-          <button onclick={() => showHideSideBar()} class="b2">BTN</button>
+      <div class="f1 b1 css-valeo-light-grey hf oa ac">
+        <div class="sticky f jsb b2 p2 css-valeo-winglet m0" style="top: 0;">
+          <!-- svelte-ignore a11y_consider_explicit_label -->
+          <button onclick={() => showHideSideBar()} class="b2">
+            <div class="menuiconitem"></div>
+            <div class="menuiconitem"></div>
+            <div class="menuiconitem"></div></button
+          >
           <div>....</div>
         </div>
       </div>
@@ -81,5 +89,12 @@
   button:hover {
     background: var(--sentiment-positive-vibrant);
     color: var(--valeo-dark) !important;
+  }
+
+  .menuiconitem {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
   }
 </style>
